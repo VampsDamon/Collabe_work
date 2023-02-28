@@ -716,8 +716,9 @@ button > img {
   font-family: Georgia, serif;
   font-size: medium;
   font-family: 'Gloock', serif;
-font-family: 'Xanh Mono', monospace;
-font-weight: bolder;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+
 }
 .card{
   position:relative;
