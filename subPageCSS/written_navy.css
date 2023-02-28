@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dad3f8;
+}
+::selection{
+  background: #6d50e2;
+  color: #fff;
+}
+.container{
+  
+  max-width: 1335px;
+  width: 100%;
+  padding: 40px 50px  40px  40px;
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.container .topic{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .list{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-right: 50px;
+  position: relative;
+}
+.content .list label{
+  height: 60px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 60px;
+  cursor: pointer;
+  padding-left: 25px;
+  transition: all 0.5s ease;
+  color: #333;
+  z-index: 12;
+}
+#home:checked ~ .list label.home,
+#blog:checked ~ .list label.blog,
+#help:checked ~ .list label.help,
+#code:checked ~ .list label.code,
+#about:checked ~ .list label.about{
+  color: #fff;
+}
+.content .list label:hover{
+  color: #6d50e2;
+}
+.content .slider{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  border-radius: 12px;
+  background: #6d50e2;
+  transition: all 0.4s ease;
+}
+#home:checked ~ .list .slider{
+  top: 0;
+}
+#blog:checked ~ .list .slider{
+  top: 60px;
+  
+}
+#help:checked ~ .list .slider{
+  top: 120px;
+}
+#code:checked ~ .list .slider{
+  top: 180px;
+}
+#about:checked ~ .list .slider{
+  top: 240px;
+}
+.content .text-content{
+  width: 80%;
+  height: 100%;
+}
+.content .text{
+  display: none;
+}
+.content .text .title{
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.content .text p{
+  text-align: justify;
+}
+.content .text-content .home{
+  display: block;
+}
+#home:checked ~ .text-content .home,
+#blog:checked ~ .text-content .blog,
+#help:checked ~ .text-content .help,
+#code:checked ~ .text-content .code,
+#about:checked ~ .text-content .about{
+  display: block;
+  margin-top: 87px;
+}
+#blog:checked ~ .text-content .home,
+#help:checked ~ .text-content .home,
+#code:checked ~ .text-content .home,
+#about:checked ~ .text-content .home{
+  display: none;
+}
+.content input{
+  display: none;
+}
+.section1 {
+  text-align: center;
+  margin: 0 auto 100px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+  font-size: 30px;
+  margin-left: 42px;
+  margin-top: -27px;
+}
+.section1::after {
+  content: "";
+  background: #ff523b;
+  width: 300px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 7;
+  left: 50%;
+  transform: translate(-50%);
+}
+#tabContent .tabContent {
+    clear: both;
+    border: 1px solid #e4e4e4;
+    padding: 15px;
+    width: 100%;
+}
+#tabContent {
+    margin: 0;
+}
+
+#tabContent .tabNav {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+#tabContent .tabNav li {
+    float: left;
+}
+
+#tabContent .tabNav li a {
+    display: block;
+    color: #2A5744;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    padding: 0 20px;
+    margin-right: 3px;
+    background: url(../Images/nav-bg.gif) top left repeat-x;
+    border: 1px solid #d1d1d1;
+    border-bottom: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: -1px
+}
+
+#tabContent .tabNav li a.last {
+    border-right: none;
+}
+
+#tabContent .tabNav li a.active, #tabContent .tabNav li a:hover {
+    color: #C05433;
+    background: #fff
+}
+
+#tabContent .tabContent {
+    clear: both;
+    border: 1px solid #e4e4e4;
+    padding: 15px;
+    width: 100%;
+}
