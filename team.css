@@ -2,14 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
 
 .team{
-    background: #fff;
-    width: 580px;
+    background: #b179f0;
+    width: 97%;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    
 }
 .h2team{
     text-align: center;
+    color: black;
 }
 .hrteam{
     width: 100px;
@@ -19,13 +21,14 @@
     display: flex;
 }
 .team-mem{
-    margin: 8px;
+    margin-left: 180px;
+    margin-top: 33px;
 }
 .imgteam{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin: 10px;
+
 }
 .h4team,.pteam{
     text-align: center;

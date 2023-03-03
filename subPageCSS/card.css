@@ -1,0 +1,80 @@
+
+.newcard-cont {
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+}
+.newcard-cont .newcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  width: 250px;
+  height: 477px;
+  border-radius: 10px;
+  outline: 1px solid rgb(0, 0, 0, 0.1);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  transition: 0.4s;
+  overflow: hidden;
+  margin-left: 100px;
+}
+.newcard-cont .newcard:hover {
+  box-shadow: 0 0 4px 2px rgb(100, 100, 100, 0.1);
+  transform: translateY(-10px);
+  outline: 1px solid rgb(0, 0, 0, 0);
+}
+
+.newcard-cont .newcard strong {
+  font-size: 1.1em;
+}
+.newcard-cont .newcard p {
+  font-size: 0.9em;
+  opacity: 0.8;
+  margin-top: -25px;
+  height: 110px;
+  width: 190px;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.newcard-cont .newcard > div {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50em;
+  outline: 3px solid rgb(85, 73, 241);
+  outline-offset: 5px;
+}
+.newcard-cont .newcard > div i {
+  z-index: 1;
+  font-size: 2.7em;
+  color: rgb(85, 73, 241);
+}
+
+.newcard-cont .newcard > div::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(85, 73, 241);
+  opacity: 0.3;
+  transition: 0.4s;
+  border-radius: 50em;
+  z-index: 0;
+}
+.newcard-cont .newcard:hover > div::after {
+  transform: scale(6);
+}
+
+@media only screen and (max-width: 830px) {
+  .newcard-newcont {
+    flex-direction: column;
+  }
+}

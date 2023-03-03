@@ -604,6 +604,16 @@ button > img {
   flex: 1;
   background-color: rgb(163, 236, 240);
 }
+.lastbg-1{
+  flex: 1;
+  background-color: rgb(180, 243, 175);
+  height: 687px;
+}
+.lastbg-2{
+  flex: 1;
+  background-color: rgb(163, 236, 240);
+  height: 687px;
+}
 .about-container{
  
   width: 85%;
@@ -616,7 +626,7 @@ button > img {
   align-items: center;
   padding: 20px 40px;
   border-radius: 5px;
-  margin-top: -370px;
+  margin-top: -248px;
 }
 .about-container1{
  
@@ -644,7 +654,7 @@ button > img {
   align-items: center;
   padding: 20px 40px;
   border-radius: 5px;
-  margin-top: -1400px;
+  margin-top: -738px;
 }
 
 .image-container{
@@ -689,7 +699,7 @@ button > img {
 }
 @media screen and (max-width: 1600px){
   .about-container{
-      width: 90%;
+      
   }
   .image-container img{
       width: 400px;
