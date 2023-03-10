@@ -115,7 +115,7 @@ body{
 #code:checked ~ .text-content .code,
 #about:checked ~ .text-content .about{
   display: block;
-  margin-top: 87px;
+  margin-top: 593px;
 }
 #blog:checked ~ .text-content .home,
 #help:checked ~ .text-content .home,
